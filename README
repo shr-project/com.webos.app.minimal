@@ -1,0 +1,13 @@
+Comparing files table from pseudo/files.db shows that the main.js and main.js.map files weren't intercepted by pseudo when being created in $D, only when packaging later
+
+com.webos.app.minimal $ diff -uNr 1.0-nodejs-*/pseudo/files.txt | grep main.js                                                                                     
+-3|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/image/test/main.js|66307|194846720|0|0|33188|0|0                                                                                             
+-4|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/image/test/main.js.map|66307|194846966|0|0|33188|0|0                                                                                         
+-12|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/package/test/main.js.map|66307|200603007|0|0|33188|0|0                                                                                      
+-13|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/package/test/main.js|66307|200603008|0|0|33188|0|0                                                                                          
+-23|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/packages-split/com.webos.app.minimal/test/main.js.map|66307|200603007|0|0|33188|0|0                                                         
+-24|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/packages-split/com.webos.app.minimal/test/main.js|66307|200603008|0|0|33188|0|0                                                             
++8|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/package/test/main.js.map|66307|200937767|1026|1026|33188|0|0                                                                                 
++9|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/package/test/main.js|66307|200937768|1026|1026|33188|0|0                                                                                     
++19|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/packages-split/com.webos.app.minimal/test/main.js.map|66307|200937767|1026|1026|33188|0|0                                                   
++20|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/packages-split/com.webos.app.minimal/test/main.js|66307|200937768|1026|1026|33188|0|0
