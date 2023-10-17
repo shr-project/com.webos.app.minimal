@@ -36,6 +36,7 @@
     "react-dom": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/react-dom/package.tgz",
     "react-redux": "^7.2.4",
     "redux": "^4.1.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "webpack-cli": "^5.1.4"
   }
 }
