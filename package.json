@@ -1,0 +1,53 @@
+{
+  "name": "com.webos.app.minimal",
+  "version": "1.0.0",
+  "description": "Minimal App to debug enactjs with nodejs-20",
+  "author": "",
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "enact serve",
+    "pack": "enact pack",
+    "pack-p": "enact pack -p",
+    "watch": "enact pack --watch",
+    "clean": "enact clean",
+    "lint": "enact lint .",
+    "license": "enact license",
+    "test": "enact test",
+    "test-watch": "enact test --watch"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "",
+  "engines": {
+    "npm": ">=6.9.0"
+  },
+  "enact": {
+    "theme": "sandstone",
+    "deep": [
+      "(window.PalmSystem && window.PalmSystem.launchParams && JSON.parse(window.PalmSystem.launchParams).target) || (window.localStorage.getItem('menuTransparency') && JSON.parse(window.localStorage.getItem('menuTransparency')).menuTransparency==='off') || (window.PalmSystem && window.PalmSystem.highContrast === 'on')"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "enact"
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "build/*",
+    "dist/*"
+  ],
+  "dependencies": {
+    "@enact/core": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/core/package.tgz",
+    "@enact/i18n": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/i18n/package.tgz",
+    "@enact/sandstone": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/sandstone/package.tgz",
+    "@enact/spotlight": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/spotlight/package.tgz",
+    "@enact/ui": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/ui/package.tgz",
+    "@enact/webos": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/webos/package.tgz",
+    "ilib": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/ilib/package.tgz",
+    "prop-types": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/prop-types/package.tgz",
+    "react": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/react/package.tgz",
+    "react-dom": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/react-dom/package.tgz",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0"
+  }
+}
