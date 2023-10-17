@@ -1,0 +1,63 @@
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        {
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "pid": 872107,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tid": 872107,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ts": 44258153561,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tts": 446347,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ph": "b",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "cat": "node,node.fs,node.fs.async",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "name": "stat",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "dur": 0,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tdur": 0,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "id": "0x55c8f83b4af0",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "args": {
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json:                "path": "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js"
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            }
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        },
+--
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        {
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "pid": 872107,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tid": 872107,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ts": 44258153882,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tts": 446628,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ph": "b",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "cat": "node,node.fs,node.fs.async",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "name": "open",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "dur": 0,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tdur": 0,
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "id": "0x55c8f86a91a0",
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "args": {
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json:                "path": "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js"
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            }
+1.0-nodejs-18-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        },
+--
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        {
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "pid": 873806,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tid": 873806,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ts": 44356273042,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tts": 405877,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ph": "b",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "cat": "node,node.fs,node.fs.async",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "name": "stat",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "dur": 0,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tdur": 0,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "id": "0x56168dce4700",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "args": {
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json:                "path": "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js"
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            }
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        },
+--
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        {
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "pid": 873806,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tid": 873806,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ts": 44356273323,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tts": 406131,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "ph": "b",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "cat": "node,node.fs,node.fs.async",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "name": "open",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "dur": 0,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "tdur": 0,
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "id": "0x56168dded570",
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            "args": {
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json:                "path": "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js"
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-            }
+1.0-nodejs-20-install-webpack-only-npmsw-trace/git/node_trace.1.log.json-        },

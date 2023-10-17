@@ -19,7 +19,7 @@ do_compile() {
 }
 
 do_install() {
-    NODE_DEBUG=* ${STAGING_BINDIR_NATIVE}/node node_modules/webpack-cli/bin/cli.js -o ${D}/test
+    NODE_DEBUG=* ${STAGING_BINDIR_NATIVE}/node --trace-event-categories=node.fs.sync,node.fs.async node_modules/webpack-cli/bin/cli.js -o ${D}/test
 }
 
 FILES:${PN} += "test"
