@@ -64,3 +64,20 @@ drwxr-xr-x 3 martin martin 4.0K Oct 17 20:19 ..
 -rw-r--r-- 1 martin martin  356 Oct 17 20:19 index.html
 -rw-r--r-- 1 martin martin 127K Oct 17 20:19 main.js
 -rw-r--r-- 1 martin martin  86K Oct 17 20:19 main.js.map
+
+Even with strace -f -v in the recipe it just emits main.js like magic with nodejs-20:
+
+com.webos.app.minimal $ grep main.js 1.0-nodejs-*-strace-f/temp/log.do_install
+1.0-nodejs-18-strace-f/temp/log.do_install:[pid 907113] statx(AT_FDCWD, "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1.0-nodejs-18-strace-f/temp/log.do_install:[pid 907114] lstat("/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js", 0x7fe861ffaa00) = -1 ENOENT (No such file or directory)
+1.0-nodejs-18-strace-f/temp/log.do_install:[pid 907114] newfstatat(AT_FDCWD, "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js", 0x7fe861ffaa60, 0) = -1 ENOENT (No such file or directory)
+1.0-nodejs-18-strace-f/temp/log.do_install:[pid 907114] newfstatat(AT_FDCWD, "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js", 0x7fe861ffaa60, 0) = -1 ENOENT (No such file or directory)
+1.0-nodejs-18-strace-f/temp/log.do_install:[pid 907114] openat(AT_FDCWD, "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0644) = 18
+1.0-nodejs-18-strace-f/temp/log.do_install:[pid 907114] newfstatat(AT_FDCWD, "/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js", {st_dev=makedev(0x103, 0x1), st_ino=51299015, st_mode=S_IFREG|
+0644, st_nlink=1, st_uid=1026, st_gid=1026, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1697573872 /* 2023-10-17T20:17:52.356749322+0000 */, st_atime_nsec=356749322, st_mtime=1697573872 /* 2023-10-17T20:17:52.356749322+0000 */, st_m
+time_nsec=356749322, st_ctime=1697573872 /* 2023-10-17T20:17:52.356749322+0000 */, st_ctime_nsec=356749322}, 0) = 0
+1.0-nodejs-18-strace-f/temp/log.do_install:[pid 907105] write(1, "asset main.js 0 bytes [emitted] "..., 482) = 482
+1.0-nodejs-18-strace-f/temp/log.do_install:asset main.js 0 bytes [emitted] [minimized] (name: main)
+
+1.0-nodejs-20-strace-f/temp/log.do_install:asset main.js 0 bytes [emitted] [minimized] (name: main)
+1.0-nodejs-20-strace-f/temp/log.do_install:[pid 904185] write(1, "asset main.js 0 bytes [emitted] "..., 482) = 482
