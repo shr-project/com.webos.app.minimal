@@ -11,3 +11,56 @@ com.webos.app.minimal $ diff -uNr 1.0-nodejs-*/pseudo/files.txt | grep main.js
 +9|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/package/test/main.js|66307|200937768|1026|1026|33188|0|0                                                                                     
 +19|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/packages-split/com.webos.app.minimal/test/main.js.map|66307|200937767|1026|1026|33188|0|0                                                   
 +20|/OE/lge/build/webos/nanbield/BUILD/work/raspberrypi4_64-webos-linux/com.webos.app.minimal/1.0/packages-split/com.webos.app.minimal/test/main.js|66307|200937768|1026|1026|33188|0|0
+
+Or better seen when both WORKDIRs are saved after running only do_install:
+
+martin@jama /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal $ sqlite3 1.0-nodejs-18-install/pseudo/files.db "select * from files" > 1.0-nodejs-18-install/pseudo/files.txt
+martin@jama /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal $ sqlite3 1.0-nodejs-20-install/pseudo/files.db "select * from files" > 1.0-nodejs-20-install/pseudo/files.txt
+
+martin@jama /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal $ diff -uNr 1.0-nodejs-*-install/pseudo/files.txt
+--- 1.0-nodejs-18-install/pseudo/files.txt      2023-10-17 20:21:43.327495762 +0200
++++ 1.0-nodejs-20-install/pseudo/files.txt      2023-10-17 20:21:53.865494633 +0200
+@@ -1,5 +1 @@
+-1|/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image|66305|52571009|0|0|16877|0|0
+-2|/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test|66305|52571011|0|0|16877|0|0
+-3|/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js|66305|52571020|0|0|33188|0|0
+-4|/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/main.js.map|66305|52571021|0|0|33188|0|0
+-5|/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html|66305|52571022|0|0|33188|0|0
++1|/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image|66305|52170186|0|0|16877|0|0
+
+martin@jama /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal $ grep index.html 1.0-nodejs-*-install/temp/log.do_install
+1.0-nodejs-18-install/temp/log.do_install:852148: paes: newpath , element list </OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html>
+1.0-nodejs-18-install/temp/log.do_install:852148: element to add: 'index.html'
+1.0-nodejs-18-install/temp/log.do_install:852148: pae: '/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test', + 'index.html', is_dir 1
+1.0-nodejs-18-install/temp/log.do_install:852148: paes: append_element gave us '/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html', current ''
+1.0-nodejs-18-install/temp/log.do_install:852148: <nil> + /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html => </OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/
+image/test/index.html>
+1.0-nodejs-18-install/temp/log.do_install:852148: base_path[follow]: <nil></>/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html => /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webo
+s.app.minimal/1.0/image/test/index.html
+1.0-nodejs-18-install/temp/log.do_install:852148: root_path [open64, 11133]: '/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html' from '/OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com
+.webos.app.minimal/1.0/image/test/index.html'
+1.0-nodejs-18-install/temp/log.do_install:852148: openat_creat: /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html -> 0644
+1.0-nodejs-18-install/temp/log.do_install:852148: openat(path /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html), flags 2001101, stat rc 0, stat mode 100644
+1.0-nodejs-18-install/temp/log.do_install:852148: creat /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html (+buf) (0100644): processing request [ino 52571022]
+1.0-nodejs-18-install/temp/log.do_install:852148: msg type 6 (creat), external path /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html, mode 0100644
+1.0-nodejs-18-install/temp/log.do_install:852148: open /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal/1.0/image/test/index.html [fd 23] (+buf) [dev/ino: 66305/52571022] (0100644): processing request [ino 52571022
+
+The files _were_ installed by enactjs.pack and are identical:
+
+martin@jama /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal $ diff -rq 1.0-nodejs-*-install/image
+martin@jama /OE/build/oe-core/tmp-glibc/work/core2-64-oe-linux/com.webos.app.minimal $ ll 1.0-nodejs-*-install/image/test/
+1.0-nodejs-18-install/image/test/:
+total 228K
+drwxr-xr-x 2 martin martin 4.0K Oct 17 20:20 .
+drwxr-xr-x 3 martin martin 4.0K Oct 17 20:20 ..
+-rw-r--r-- 1 martin martin  356 Oct 17 20:20 index.html
+-rw-r--r-- 1 martin martin 127K Oct 17 20:20 main.js
+-rw-r--r-- 1 martin martin  86K Oct 17 20:20 main.js.map
+
+1.0-nodejs-20-install/image/test/:
+total 228K
+drwxr-xr-x 2 martin martin 4.0K Oct 17 20:19 .
+drwxr-xr-x 3 martin martin 4.0K Oct 17 20:19 ..
+-rw-r--r-- 1 martin martin  356 Oct 17 20:19 index.html
+-rw-r--r-- 1 martin martin 127K Oct 17 20:19 main.js
+-rw-r--r-- 1 martin martin  86K Oct 17 20:19 main.js.map
