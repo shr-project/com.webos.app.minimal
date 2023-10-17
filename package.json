@@ -21,12 +21,6 @@
   "engines": {
     "npm": ">=6.9.0"
   },
-  "enact": {
-    "theme": "sandstone",
-    "deep": [
-      "(window.PalmSystem && window.PalmSystem.launchParams && JSON.parse(window.PalmSystem.launchParams).target) || (window.localStorage.getItem('menuTransparency') && JSON.parse(window.localStorage.getItem('menuTransparency')).menuTransparency==='off') || (window.PalmSystem && window.PalmSystem.highContrast === 'on')"
-    ]
-  },
   "eslintConfig": {
     "extends": "enact"
   },
@@ -37,12 +31,6 @@
   ],
   "dependencies": {
     "@enact/core": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/core/package.tgz",
-    "@enact/i18n": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/i18n/package.tgz",
-    "@enact/sandstone": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/sandstone/package.tgz",
-    "@enact/spotlight": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/spotlight/package.tgz",
-    "@enact/ui": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/ui/package.tgz",
-    "@enact/webos": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/webos/package.tgz",
-    "ilib": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/ilib/package.tgz",
     "prop-types": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/prop-types/package.tgz",
     "react": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/react/package.tgz",
     "react-dom": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/react-dom/package.tgz",

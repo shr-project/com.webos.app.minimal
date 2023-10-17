@@ -10,12 +10,6 @@
       "license": "UNLICENSED",
       "dependencies": {
         "@enact/core": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/core/package.tgz",
-        "@enact/i18n": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/i18n/package.tgz",
-        "@enact/sandstone": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/sandstone/package.tgz",
-        "@enact/spotlight": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/spotlight/package.tgz",
-        "@enact/ui": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/ui/package.tgz",
-        "@enact/webos": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/webos/package.tgz",
-        "ilib": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/ilib/package.tgz",
         "prop-types": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/prop-types/package.tgz",
         "react": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/react/package.tgz",
         "react-dom": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/react-dom/package.tgz",
@@ -52,92 +46,6 @@
         "react-dom": "^18.2.0",
         "react-is": "^18.2.0",
         "warning": "^4.0.3"
-      }
-    },
-    "node_modules/@enact/i18n": {
-      "version": "4.7.2",
-      "resolved": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/i18n/package.tgz",
-      "integrity": "sha512-z7dF01Dy0vwWpXLCmciNwO5mYQPjk2hyv9OPg63GLadvQqSP2Qz/dNud9IVP18AyMI4f8p1wXJm+OOwbVJaXCA==",
-      "license": "Apache-2.0",
-      "dependencies": {
-        "@enact/core": "^4.7.2",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "xhr": "^2.6.0"
-      },
-      "peerDependencies": {
-        "ilib": "^14.17.0 || ^14.17.0-webos1"
-      }
-    },
-    "node_modules/@enact/sandstone": {
-      "version": "2.7.3",
-      "resolved": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/sandstone/package.tgz",
-      "integrity": "sha512-vNQYJ+MJPUhcmdEiSRf2Ql4s1VtNWJBNNpB1KxCuSa2asr7N85icbXNtp3sB0S8jaqiKvbBVH0HrNGWRRVgbCw==",
-      "license": "Apache-2.0",
-      "dependencies": {
-        "@enact/core": "^4.7.2",
-        "@enact/i18n": "^4.7.2",
-        "@enact/spotlight": "^4.7.2",
-        "@enact/ui": "^4.7.2",
-        "@enact/webos": "^4.7.2",
-        "classnames": "^2.3.2",
-        "ilib": "^14.17.0",
-        "invariant": "^2.2.4",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "warning": "^4.0.3"
-      },
-      "peerDependencies": {
-        "ilib": "^14.17.0 || ^14.17.0-webos1"
-      }
-    },
-    "node_modules/@enact/spotlight": {
-      "version": "4.7.2",
-      "resolved": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/spotlight/package.tgz",
-      "integrity": "sha512-CBM2oO447v5inImwOKJGDIFlh3NZzteT863pzMj7s1yhbmX5s/O0x8RcDKUvjICuSIbS7jYhv9EKB8UExhvIdQ==",
-      "license": "Apache-2.0",
-      "dependencies": {
-        "@enact/core": "^4.7.2",
-        "classnames": "^2.3.2",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "warning": "^4.0.3"
-      }
-    },
-    "node_modules/@enact/ui": {
-      "version": "4.7.2",
-      "resolved": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/ui/package.tgz",
-      "integrity": "sha512-AGS4ggVjjf3cqryfX8I+WN57CcBM5Yzy8GlrFmvnF0uYeLYHbyfqPINgp1xKazt0E+V+dpUkQ+4UkPnXP/qlPQ==",
-      "license": "Apache-2.0",
-      "dependencies": {
-        "@enact/core": "^4.7.2",
-        "classnames": "^2.3.2",
-        "direction": "^1.0.4",
-        "invariant": "^2.2.4",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-is": "^18.2.0",
-        "warning": "^4.0.3"
-      }
-    },
-    "node_modules/@enact/webos": {
-      "version": "4.7.2",
-      "resolved": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/webos/package.tgz",
-      "integrity": "sha512-W3O8oNo0rJjqnSPCVa3zpzlwgtVnRnCCflYo0pd87oI7/L6BmkH/loASOHR1ZvQWHBPvJMcaIIxN4ORmMBYT1A==",
-      "license": "Apache-2.0",
-      "dependencies": {
-        "@enact/core": "^4.7.2",
-        "prop-types": "^15.8.1",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
       }
     },
     "node_modules/@types/hoist-non-react-statics": {
@@ -228,12 +136,6 @@
       "version": "16.13.1",
       "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
       "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
-    },
-    "node_modules/ilib": {
-      "version": "14.18.0",
-      "resolved": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/ilib/package.tgz",
-      "integrity": "sha512-4fKMih00S2BlrF0lg0JIy8Y8cC0rjimqGE2d+9tOOrfAcMu/IK3L2dtIFoT3X2boQrlF+LQspxuLDOULUaAilw==",
-      "license": "Apache-2.0"
     },
     "node_modules/invariant": {
       "version": "2.2.4",
@@ -457,76 +359,6 @@
         "warning": "^4.0.3"
       }
     },
-    "@enact/i18n": {
-      "version": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/i18n/package.tgz",
-      "integrity": "sha512-z7dF01Dy0vwWpXLCmciNwO5mYQPjk2hyv9OPg63GLadvQqSP2Qz/dNud9IVP18AyMI4f8p1wXJm+OOwbVJaXCA==",
-      "requires": {
-        "@enact/core": "^4.7.2",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "xhr": "^2.6.0"
-      }
-    },
-    "@enact/sandstone": {
-      "version": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/sandstone/package.tgz",
-      "integrity": "sha512-vNQYJ+MJPUhcmdEiSRf2Ql4s1VtNWJBNNpB1KxCuSa2asr7N85icbXNtp3sB0S8jaqiKvbBVH0HrNGWRRVgbCw==",
-      "requires": {
-        "@enact/core": "^4.7.2",
-        "@enact/i18n": "^4.7.2",
-        "@enact/spotlight": "^4.7.2",
-        "@enact/ui": "^4.7.2",
-        "@enact/webos": "^4.7.2",
-        "classnames": "^2.3.2",
-        "ilib": "^14.17.0",
-        "invariant": "^2.2.4",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "warning": "^4.0.3"
-      }
-    },
-    "@enact/spotlight": {
-      "version": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/spotlight/package.tgz",
-      "integrity": "sha512-CBM2oO447v5inImwOKJGDIFlh3NZzteT863pzMj7s1yhbmX5s/O0x8RcDKUvjICuSIbS7jYhv9EKB8UExhvIdQ==",
-      "requires": {
-        "@enact/core": "^4.7.2",
-        "classnames": "^2.3.2",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "warning": "^4.0.3"
-      }
-    },
-    "@enact/ui": {
-      "version": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/ui/package.tgz",
-      "integrity": "sha512-AGS4ggVjjf3cqryfX8I+WN57CcBM5Yzy8GlrFmvnF0uYeLYHbyfqPINgp1xKazt0E+V+dpUkQ+4UkPnXP/qlPQ==",
-      "requires": {
-        "@enact/core": "^4.7.2",
-        "classnames": "^2.3.2",
-        "direction": "^1.0.4",
-        "invariant": "^2.2.4",
-        "prop-types": "^15.8.1",
-        "ramda": "^0.29.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-is": "^18.2.0",
-        "warning": "^4.0.3"
-      }
-    },
-    "@enact/webos": {
-      "version": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/@enact/webos/package.tgz",
-      "integrity": "sha512-W3O8oNo0rJjqnSPCVa3zpzlwgtVnRnCCflYo0pd87oI7/L6BmkH/loASOHR1ZvQWHBPvJMcaIIxN4ORmMBYT1A==",
-      "requires": {
-        "@enact/core": "^4.7.2",
-        "prop-types": "^15.8.1",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
-      }
-    },
     "@types/hoist-non-react-statics": {
       "version": "3.3.1",
       "resolved": "https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz",
@@ -610,10 +442,6 @@
           "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
         }
       }
-    },
-    "ilib": {
-      "version": "file:../recipe-sysroot/usr/share/javascript/enact-sandstone/ilib/package.tgz",
-      "integrity": "sha512-4fKMih00S2BlrF0lg0JIy8Y8cC0rjimqGE2d+9tOOrfAcMu/IK3L2dtIFoT3X2boQrlF+LQspxuLDOULUaAilw=="
     },
     "invariant": {
       "version": "2.2.4",
